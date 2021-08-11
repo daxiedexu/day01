@@ -60,10 +60,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPropertyChanged(Observable sender, int propertyId) {
                 if (propertyId == BR.name){
-                    Log.i(TAG,userBean.getName());
                     Log.i(TAG, "onPropertyChanged: 监听到username属性发生变化");
                 }else if (propertyId == BR.password){
-                    Log.i(TAG,userBean.getPassword());
                     Log.i(TAG, "onPropertyChanged: 监听到password属性发生变化");
                 }
             }
